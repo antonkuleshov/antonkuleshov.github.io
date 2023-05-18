@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="./css/creator.css">
   <link rel="stylesheet" href="./css/phantomjs.css">
   <link rel="stylesheet" href="./css/fonts.css">
+  <style>
+    @media print {
+      body {
+        visibility: hidden;
+      }
+      .page {
+        -webkit-print-color-adjust: exact;
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 <div id="root">
