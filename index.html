@@ -9,18 +9,19 @@
   <link rel="stylesheet" href="./css/phantomjs.css">
   <link rel="stylesheet" href="./css/fonts.css">
   <style>
-    @media print {
-      body {
-        visibility: hidden;
+      @media print {
+          body {
+              visibility: hidden;
+          }
+
+          .page {
+              -webkit-print-color-adjust: exact;
+              visibility: visible;
+              position: absolute;
+              left: 0;
+              top: 0;
+          }
       }
-      .page {
-        -webkit-print-color-adjust: exact;
-        visibility: visible;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
   </style>
 </head>
 <body>
@@ -28,18 +29,20 @@
   <div class="Layout undefined">
     <div>
       <div class="DocumentOnline">
-        <div id="creatorContent" class=" online">
+        <div class="creatorContent">
           <div
-              class="page fFamilyTxtArimo fStyleH1Bold fStyleH1LastBold fStyleH3Bold fStyleH5Bold fStylePersonalTitleBold pagePaddingTop30 pagePaddingRight30 pagePaddingBottom30 pagePaddingLeft30 secSpace20 colSpace20"
-              data-template="6" data-id="9d9b7601-8b8a-4281-831f-f4dc02d162fa" data-user-id="2393490"
-              data-colorset="256" data-language="en_EN" data-type="cv" data-name="My resume" data-url="antonkuleshov"
-              data-first-name="Anton" data-last-name="Kuleshov" style="min-height: auto;">
+                  class="page fFamilyTxtArimo fStyleH1Bold fStyleH1LastBold fStyleH3Bold fStyleH5Bold fStyleH6Bold
+              fStylePersonalTitleBold pagePaddingTop30 pagePaddingRight30 pagePaddingBottom30 pagePaddingLeft30 secSpace20 colSpace20"
+                  data-template="6" data-id="9d9b7601-8b8a-4281-831f-f4dc02d162fa" data-user-id="2393490"
+                  data-colorset="256" data-language="en_EN" data-type="cv" data-name="My resume"
+                  data-url="antonkuleshov"
+                  data-first-name="Anton" data-last-name="Kuleshov" style="min-height: auto;">
             <div class="dRow firstRow lastRow" style="height: auto;">
               <div
-                  class="dCol secTitMarginBottom10 secAccIcoCircle colSpecialLineOn colSpecialBorderPrimoOn dateLinesDouble dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 firstCol"
-                  style="width: 75%; height: 1400px;">
+                      class="dCol secTitMarginBottom10 secAccIcoCircle colSpecialLineOn colSpecialBorderPrimoOn dateLinesDouble dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 firstCol"
+                      style="width: 75%; height: 1400px;">
                 <div
-                    class="section sectionType1 sectionBasic secType1AccCircle secSpecialLineOff fStyleH1Bold fStyleH1LastBold">
+                        class="section sectionType1 sectionBasic secType1AccCircle secSpecialLineOff fStyleH1Bold fStyleH1LastBold">
                   <div class="entry">
                     <div class="secType1Acc">
                       <div class="secType1AccInitials">ak</div>
@@ -49,7 +52,7 @@
                         <span class="firstname">Anton</span>
                         <span class="lastname">Kuleshov</span>
                       </h1>
-                      <h2>PHP Developer</h2>
+                      <h2>Senior Software Engineer</h2>
                     </div>
                   </div>
                 </div>
@@ -60,8 +63,8 @@
                       <div class="pointer" style="top: 0.8rem; left: -38px;"></div>
                       <div class="text desc">
                         <p>Hi there, I'm PHP Developer with experience in full stack development.
-                        I love modern technologies and remote works.
-                        Also I like to solve hard complex tasks. Purposeful and attentive to details.
+                          I love modern technologies and remote works.
+                          Also I like to solve hard complex tasks. Purposeful and attentive to details.
                           Optimistic and hopeful for the best.
                         </p>
                       </div>
@@ -88,12 +91,13 @@
                         <h6 class="subtitle">Agile Fuel</h6>
                         <div class="text desc">
                           - API for retail platform - (Symfony 5)<br>
-                          I Worked for various tasks with new features PHP 8.2 like files uploading, added new features to current logic,
+                          Working on various tasks with new features PHP 8.2 like files uploading, added new features to
+                          current logic,
                           change and optimisation<br>
                           - Retail platform - (React, Typescript)<br>
-                          Worked with typescript on front. Also used React-table<br>
+                          Developing with typescript on front. Also used React-table<br>
                           - Admin system for retail platform - (ExtJs)<br>
-                          I Worked on admin panel with framework ExtJs
+                          Developing tasks for admin panel using ExtJs ()
                         </div>
                       </div>
                     </div>
@@ -112,15 +116,14 @@
                         <h5 class="title">Full-Stack Developer<br></h5>
                         <h6 class="subtitle">Rational-Soft</h6>
                         <div class="text desc">
-                            - Analytics Retail platform - (Symfony 5, devExtreme(React components))<br>
-                            Experience of develop project from scratch<br>
-                            - TradeIn portal for dealers famous brand's car - (Symfony 3, jQuery, Twig)<br>
-                            It's was a project with legacy and optimisations.
-                          Also implemented e-sign for uploading documents<br>
-                            - Collector's system for various leads generation from various systems - (Symfony 5, UnitTest)<br>
-                            It's also new project from vanilla legacy<br>
-                            - Also 4-6 different years projects where i used symfony, nest js, react components, where i
-                            added various features
+                          - Analytics Retail platform - (Symfony 5, devExtreme(React components))<br>
+                          Experience in develop project from scratch<br>
+                          - TradeIn portal for dealers famous brand's car - (Symfony 3, jQuery, Twig)<br>
+                          Working on a legacy project with optimizations. Implementation e-sign for uploading
+                          documents<br>
+                          - Collector's system for various leads generation from various systems - (Symfony 5, UnitTest)<br>
+                          Developing new project from vanilla legacy<br>
+                          - Participation in 4-6 different projects (symfony, nest js, react components).
                         </div>
                       </div>
                     </div>
@@ -141,11 +144,13 @@
                         <h6 class="subtitle">Fluvius</h6>
                         <div class="text desc">
                           - Ads system to posting/accounting on facebook - (native PHP, jQuery, Angular 1.x)<br>
-                          It's was a legacy project with many optimisation<br>
-                          - Promotion portal - (Symfony 4, jQuery, WebPack)<br>
-                          It's was a project from scratch on new technologies for that time<br>
+                          Working on a legacy project that's needed a lot of optimization<br>
+                          - Promotional portal - (Symfony 4, jQuery, WebPack)<br>
+                          Working on a project from scratch. Designing and planning, working with requirements and
+                          developing frontend and backend<br>
                           - CRM system for outsource company - (Symfony 3, jQuery)<br>
-                          It's was a big portal with international team
+                          Working on a CRM portal and be part of an international team. Rechanging design, working with
+                          external API
                         </div>
                       </div>
                     </div>
@@ -160,34 +165,21 @@
                         <h5 class="title">PHP Developer<br></h5>
                         <h6 class="subtitle">PJSC "Ukrzaliznytsia", IT department<br></h6>
                         <div class="text desc">
-                          - System which shows free places in trains on the screens
-                          <br>
-                          - Internal reporting systems(Symfony 2) - develop and support, requirements accounting
-                        </div>
-                      </div>
-                    </div>
-                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
-                         data-date-to-month="" style="min-height: 50px;">
-                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
-                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2009-10</span>
-                        <span class="dateSeparator"></span>
-                        <span class="dateTo">2016-08</span>
-                      </div>
-                      <div class="content">
-                        <h5 class="title">Support specialist</h5>
-                        <h6 class="subtitle">PJSC "Ukrzaliznytsia"</h6>
-                        <div class="text desc">
-                          - Technical support of automated systems on railway. Used logging controls, xml reading, check and control information reports
-                          <br>
+                          - Platform of free places in trains (PHP, JS)<br>
+                          Developing from vanilla code and change DB<br>
+                          - Internal reporting systems - creating and saving XML data from Oracle database<br>
+                          - Internal departments notes (Symfony 2, SonataAdmin) - notes about change in a work for
+                          view and search and admin's managing<br>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
               <div
-                  class="dCol secTitMarginBottom10 secAccIcoCircle dateLayoutLine dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 lastCol"
-                  style="width: 23%; height: 1400px;">
+                      class="dCol secTitMarginBottom10 secAccIcoCircle dateLayoutLine dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 lastCol"
+                      style="width: 23%; height: 1400px;">
                 <div class="section sectionType2 sectionPersonal">
                   <h3 class="title"><span class="ico"></span><span class="txt">Personal Info</span></h3>
                   <div class="entryContainer content">
@@ -242,29 +234,40 @@
                     </div>
                   </div>
                 </div>
-                <div class="section sectionType5 sectionEducation">
-                  <h3 class="title"><span class="ico"></span><span class="txt">Education</span></h3>
-                  <div class="entryContainer">
-                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
-                         data-date-to-month="" style="min-height: 50px;">
-                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
-                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2015-09</span>
-                        <span class="dateSeparator"></span>
-                        <span class="dateTo">2016-10</span>
-                      </div>
-                      <div class="content">
-                        <h4 class="personalTitle">Kharkiv National University of Radioelectronics</h4>
-                        <div class="text desc">Software Engineering Department</div>
-                      </div>
-                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
-                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2003-09</span>
-                        <span class="dateSeparator"></span>
-                        <span class="dateTo">2008-05</span>
-                      </div>
-                      <div class="content">
-                        <h4 class="personalTitle">Kharkiv State Academy of Railway Transport</h4>
-                        <div class="text desc">Organization of transportations and management</div>
-                      </div>
+                <div class="section sectionType7 sectionSkills ratingCircle ratingTwoLines">
+                  <h3 class="title"><span class="ico"></span><span class="txt">Skills</span></h3>
+                  <div class="entryContainer content">
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Symfony</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">PHP</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">JS</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">React</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Typescript</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">ExtJs</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">CSS</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">HTML</h4>
                     </div>
                   </div>
                 </div>
@@ -273,7 +276,6 @@
                   <div class="entryContainer content">
                     <div class="entry">
                       <div class="pointer"></div>
-                      <h4 class="descShort">Russian: Native</h4>
                       <h4 class="descShort">Ukrainian: Native</h4>
                       <h4 class="descShort">English: Intermediate</h4>
                     </div>
@@ -290,12 +292,78 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
+        <div class="creatorContent">
+          <div class="page fFamilyTxtArimo fStyleH1Bold fStyleH1LastBold fStyleH3Bold fStyleH5Bold fStyleH6Bold
+           fStylePersonalTitleBold pagePaddingTop30 pagePaddingRight30 pagePaddingBottom30 pagePaddingLeft30 secSpace20 colSpace20"
+               style="min-height: auto;">
+            <div class="dRow firstRow lastRow" style="height: auto;">
+              <div
+                      class="dCol secTitMarginBottom10 secAccIcoCircle colSpecialLineOn colSpecialBorderPrimoOn dateLinesDouble dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 firstCol"
+                      style="width: 75%; height: 1400px;">
+
+                <div class="section sectionType6 sectionExperience">
+                  <div class="entryContainer">
+
+                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
+                         data-date-to-month="" style="min-height: 50px;">
+                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
+                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2009-10</span>
+                        <span class="dateSeparator"></span>
+                        <span class="dateTo">2016-08</span>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Support specialist</h5>
+                        <h6 class="subtitle">PJSC "Ukrzaliznytsia"</h6>
+                        <div class="text desc">
+                          - Technical support of automated systems on railway. Used logging controls, xml reading,
+                          check and control information reports
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="section sectionType5 sectionEducation">
+                  <h3 class="title"><span class="ico"></span><span class="txt">Education</span></h3>
+                  <div class="entryContainer">
+                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
+                         data-date-to-month="" style="min-height: 50px;">
+                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
+                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2015-09</span>
+                        <span class="dateSeparator"></span>
+                        <span class="dateTo">2016-10</span>
+                      </div>
+                      <div class="content">
+                        <h5 class="title"><p>Kharkiv National University of Radio Electronics</p>
+                          <p></p></h5>
+                        <div class="text desc"><p>Specialist of Software Engineering</p></div>
+                      </div>
+                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
+                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2003-09</span>
+                        <span class="dateSeparator"></span>
+                        <span class="dateTo">2008-05</span>
+                      </div>
+                      <div class="content">
+                        <h5 class="title"><p>Kharkiv State Academy of Railway Transport</p>
+                          <p></p></h5>
+                        <div class="text desc"><p>Master of Organization of transportations and management</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
