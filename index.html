@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>My resume</title>
+  <title>Anton Kuleshov — Senior Software Engineer</title>
+  <meta name="author" content="Anton Kuleshov">
+  <meta name="description"
+        content="Anton Kuleshov — Senior Software Engineer with 9+ years of experience in full-stack web development, PHP/Symfony backend architecture, REST APIs and microservices.">
   <link rel="stylesheet" href="./css/creator.css">
   <link rel="stylesheet" href="./css/phantomjs.css">
   <link rel="stylesheet" href="./css/fonts.css">
@@ -16,13 +19,57 @@
 
           .page {
               -webkit-print-color-adjust: exact;
+              print-color-adjust: exact;
               visibility: visible;
-              position: absolute;
-              left: 0;
-              top: 0;
+          }
+
+          /* Each builder page prints on its own sheet; content flows instead of overlapping. */
+          .creatorContent:not(:last-child) {
+              page-break-after: always;
+          }
+
+          .dCol {
+              height: auto !important;
           }
       }
+
+      .text.desc ul {
+          margin: 0.2rem 0 0;
+          padding-left: 18px;
+      }
+
+      .text.desc li {
+          margin-bottom: 4px;
+      }
+
+      .text.desc p + ul {
+          margin-top: 0.4rem;
+      }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anton Kuleshov",
+    "givenName": "Anton",
+    "familyName": "Kuleshov",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "Efumo SSC" },
+    "email": "mailto:antonkuleshov8@gmail.com",
+    "telephone": "+380636709697",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kharkiv",
+      "addressCountry": "UA"
+    },
+    "url": "https://github.com/antonkuleshov",
+    "sameAs": [
+      "https://github.com/antonkuleshov",
+      "https://www.linkedin.com/in/antonkuleshov8/"
+    ],
+    "knowsLanguage": ["uk", "en"]
+  }
+  </script>
 </head>
 <body>
 <div id="root">
@@ -40,7 +87,7 @@
             <div class="dRow firstRow lastRow" style="height: auto;">
               <div
                       class="dCol secTitMarginBottom10 secAccIcoCircle colSpecialLineOn colSpecialBorderPrimoOn dateLinesDouble dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 firstCol"
-                      style="width: 75%; height: 1400px;">
+                      style="width: 75%; min-height: 1400px;">
                 <div
                         class="section sectionType1 sectionBasic secType1AccCircle secSpecialLineOff fStyleH1Bold fStyleH1LastBold">
                   <div class="entry">
@@ -62,11 +109,14 @@
                     <div class="entry">
                       <div class="pointer" style="top: 0.8rem; left: -38px;"></div>
                       <div class="text desc">
-                        <p>I am a PHP Developer with extensive experience in full-stack web development.
-                          I am proficient in modern technologies and highly adaptable to remote work environments.
-                          My approach to development emphasizes solving complex problems with precision and attention to detail.
-                          I am goal-oriented, analytical, and committed to delivering high-quality, maintainable solutions that meet both technical and business objectives.
-                        </p>
+                        <p>Senior Software Engineer with 9+ years of experience building and maintaining full-stack web
+                          applications, primarily in PHP and Symfony. Currently a core engineer on a large
+                          property-management platform, where I built a RabbitMQ-based notification microservice from
+                          scratch, drove part of the monolith-to-microservices split and delivered bank / payment
+                          integrations. Experienced across fuel retail, government and property-management domains in
+                          REST API design, high-load optimization and legacy modernization. Comfortable owning
+                          features end to end on the backend (Symfony, RabbitMQ, Elasticsearch, PostgreSQL) and the
+                          frontend (React, TypeScript). Fully effective in remote, distributed teams.</p>
                       </div>
                     </div>
                   </div>
@@ -75,76 +125,50 @@
                   <h3 class="title"><span class="ico"></span><span class="txt">Experience</span></h3>
                   <div class="entryContainer">
                     <div class="entry"
-                         data-date-from-year=""
-                         data-date-from-month=""
+                         data-date-from-year="2024"
+                         data-date-from-month="08"
                          data-date-to-year=""
                          data-date-to-month=""
                          style="min-height: 50px;">
                       <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
                       <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2024-08</span>
                         <span class="dateSeparator"></span>
-                        <span class="dateTo">Current</span>
+                        <span class="dateTo">Present</span>
                       </div>
                       <div class="content">
                         <h5 class="title">Senior Software Engineer<br></h5>
-                        <h6 class="subtitle">Efumo SSC</h6>
+                        <h6 class="subtitle">Efumo SSC — RNP (Rīgas namu pārvaldnieks) platform</h6>
                         <div class="text desc">
-                          - Backend and admin mobile application for fuel provider - (Symfony 7)<br>
-                          - Project for sanction management government company - (Symfony 7)<br>
-                          - Complex project for supporting residential property management operations (PHP 8.1, Memcache, Elasticsearch).<br>
-                          Led IT projects improving internal systems, digital service tools, and integrations with maintenance and customer-service platforms.
-                          Initiated the transition from a large monolithic system to a microservice-based architecture, defining the technical vision and implementation approach.
-                          Designed and implemented a new Messenger service using Symfony 7 and RabbitMQ, enabling reliable asynchronous communication between services.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="entry"
-                         data-date-from-year=""
-                         data-date-from-month=""
-                         data-date-to-year=""
-                         data-date-to-month=""
-                         style="min-height: 50px;">
-                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
-                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2022-04</span>
-                        <span class="dateSeparator"></span>
-                        <span class="dateTo">2023-04</span>
-                      </div>
-                      <div class="content">
-                        <h5 class="title">Senior Software Engineer<br></h5>
-                        <h6 class="subtitle">Agile Fuel</h6>
-                        <div class="text desc">
-                          - API for retail platform - (Symfony 7)<br>
-                          - Retail platform - (React, Typescript)<br>
-                          - Admin system for retail platform - (ExtJs)<br>
-                          Entering to hard project with a complex logic and making a lot of change for progression like a
-                          new features PHP 8.2, optimization time opening, adding new logics and functions,
-                          developing on front-end using React and ExtJs etc.<br>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="entry"
-                         data-date-from-year=""
-                         data-date-from-month=""
-                         data-date-to-year=""
-                         data-date-to-month=""
-                         style="min-height: 50px;">
-                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
-                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2019-04</span>
-                        <span class="dateSeparator"></span>
-                        <span class="dateTo">2022-03</span>
-                      </div>
-                      <div class="content">
-                        <h5 class="title">Full-Stack Developer<br></h5>
-                        <h6 class="subtitle">Rational-Soft</h6>
-                        <div class="text desc">
-                          - Analytics Retail platform - (Symfony 5, devExtreme(React components))<br>
-                          Experience in developing project from scratch<br>
-                          - TradeIn portal for dealers famous brand's car - (Symfony 3, jQuery, Twig)<br>
-                          Working on a legacy project with optimizations. Implementation e-sign for uploading
-                          documents<br>
-                          - Collector's system for various leads generation from various systems - (Symfony 5, UnitTest)<br>
-                          Developing new project from vanilla legacy<br>
-                          - Participation in 4-6 different projects (symfony, nest js, react components).
+                          <p>Core backend engineer on the RNP ecosystem — the property-management platform of Riga's
+                            largest residential housing manager (hundreds of thousands of apartments). A large
+                            PHP&nbsp;/&nbsp;Symfony monolith being decomposed into microservices, with a tenant
+                            self-service portal and dozens of external integrations.</p>
+                          <ul>
+                            <li>Built the platform's notification microservice from scratch (Symfony 7, RabbitMQ,
+                              Symfony Messenger, PostgreSQL) — worker containers with retry / back-off and
+                              dead-letter queues, REST API and monitoring. Primary contributor (~400 commits); it
+                              handles all email, SMS, push and feed messaging with a ≤&nbsp;15-second SMS delivery
+                              target.</li>
+                            <li>Designed the mass-distribution subsystem for tenant campaigns: recipient trees,
+                              categories, templates, scheduled publishing, live progress tracking and stop / resume.
+                              Tuned consumer throughput (~1,200 messages/min per consumer) and led incident response
+                              for large mailings.</li>
+                            <li>Migrated all outbound email / SMS / push from the monolith and the tenant portal to
+                              the new microservice, replacing scattered legacy senders behind a single API.</li>
+                            <li>Delivered bank and payment integrations in the monolith — SEB, Swedbank (Swedbank
+                              Gateway / SOAP, e-invoice XML&nbsp;/&nbsp;XSD, payment-order PDF parsing), Luminor and
+                              Citadele: statement import, backfill / retry jobs and recovery after production data
+                              incidents.</li>
+                            <li>Developed features for the e-RNP tenant self-service portal (~190 commits):
+                              two-factor authentication with mandatory phone confirmation, contact-data management,
+                              cost-estimate and document views, mobile layout.</li>
+                            <li>Added LDAP / Active Directory authentication, migrated core tables from MyISAM to
+                              InnoDB, and contributed API&nbsp;/&nbsp;BFF routes to the new Next.js frontend.</li>
+                            <li>Helped shape the monolith-to-microservices roadmap (notifications, invoicing,
+                              call centre) and owned the notifications domain end to end.</li>
+                          </ul>
+                          <p>Also at Efumo: backend and admin panel for a fuel-provider mobile application
+                            (Symfony 7); a sanction-management system for a government organization (Symfony 7).</p>
                         </div>
                       </div>
                     </div>
@@ -154,17 +178,15 @@
               </div>
               <div
                       class="dCol secTitMarginBottom10 secAccIcoCircle dateLayoutLine dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 lastCol"
-                      style="width: 23%; height: 1400px;">
+                      style="width: 23%; min-height: 1400px;">
                 <div class="section sectionType2 sectionPersonal">
                   <h3 class="title"><span class="ico"></span><span class="txt">Personal Info</span></h3>
                   <div class="entryContainer content">
                     <div class="entry personalAddress" data-order="1">
                       <div class="pointer"></div>
                       <div class="ico"></div>
-                      <h4 class="personalTitle">Address</h4>
-                      <div class="personalText"><p>Ukraine, Kharkiv<br></p>
-
-                        <p></p></div>
+                      <h4 class="personalTitle">Location</h4>
+                      <div class="personalText"><p>Kharkiv, Ukraine<br>Open to remote</p></div>
                     </div>
                     <div class="entry personalPhone" data-order="2">
                       <div class="pointer"></div>
@@ -179,26 +201,19 @@
                       <div class="personalText"><a href="mailto:antonkuleshov8@gmail.com" rel="nofollow noopener"
                                                    target="_blank">antonkuleshov8@gmail.com</a></div>
                     </div>
-                    <div class="entry dateBirth personalBirthday" data-birth-day="" data-birth-month=""
-                         data-birth-year="" data-order="5">
-                      <div class="pointer"></div>
-                      <div class="ico"></div>
-                      <h4 class="personalTitle">Date of birth</h4>
-                      <div class="personalText">1986-09-15</div>
-                    </div>
                     <div class="entry personalCustom icoGithub" data-order="199">
                       <div class="pointer"></div>
                       <div class="ico"></div>
                       <h4 class="personalTitle">GitHub</h4>
-                      <div class="personalText"><a href="http://github.com/antonkuleshov" target="_blank"
+                      <div class="personalText"><a href="https://github.com/antonkuleshov" target="_blank"
                                                    rel="nofollow noopener">github.com/antonkuleshov</a></div>
                     </div>
                     <div class="entry personalLinkedin entryExample" data-order="202">
                       <div class="pointer"></div>
                       <div class="ico"></div>
                       <h4 class="personalTitle">LinkedIn</h4>
-                      <div class="personalText"><a href="http://linkedin.com/in/antonkuleshov8/" target="_blank"
-                                                   rel="nofollow noopener">linkedin.com/in/antonkuleshov8/</a></div>
+                      <div class="personalText"><a href="https://www.linkedin.com/in/antonkuleshov8/" target="_blank"
+                                                   rel="nofollow noopener">linkedin.com/in/antonkuleshov8</a></div>
                     </div>
                   </div>
                 </div>
@@ -207,15 +222,55 @@
                   <div class="entryContainer content">
                     <div class="entry">
                       <div class="pointer"></div>
-                      <h4 class="descShort">Symfony</h4>
-                    </div>
-                    <div class="entry">
-                      <div class="pointer"></div>
                       <h4 class="descShort">PHP</h4>
                     </div>
                     <div class="entry">
                       <div class="pointer"></div>
-                      <h4 class="descShort">JS</h4>
+                      <h4 class="descShort">Symfony</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">REST API</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Microservices</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">RabbitMQ</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Elasticsearch</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Memcached</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">MySQL</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">PostgreSQL</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Oracle</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">PHPUnit</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">JavaScript</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">TypeScript</h4>
                     </div>
                     <div class="entry">
                       <div class="pointer"></div>
@@ -223,11 +278,23 @@
                     </div>
                     <div class="entry">
                       <div class="pointer"></div>
-                      <h4 class="descShort">Typescript</h4>
+                      <h4 class="descShort">Node.js / Nest.js</h4>
                     </div>
                     <div class="entry">
                       <div class="pointer"></div>
-                      <h4 class="descShort">ExtJs</h4>
+                      <h4 class="descShort">ExtJS</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Twig</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Webpack</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">HTML</h4>
                     </div>
                     <div class="entry">
                       <div class="pointer"></div>
@@ -235,7 +302,23 @@
                     </div>
                     <div class="entry">
                       <div class="pointer"></div>
-                      <h4 class="descShort">HTML</h4>
+                      <h4 class="descShort">Git</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">Docker</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">GitLab CI/CD</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">SOAP</h4>
+                    </div>
+                    <div class="entry">
+                      <div class="pointer"></div>
+                      <h4 class="descShort">PHPStan</h4>
                     </div>
                   </div>
                 </div>
@@ -245,7 +328,7 @@
                     <div class="entry">
                       <div class="pointer"></div>
                       <h4 class="descShort">Ukrainian: Native</h4>
-                      <h4 class="descShort">English: B1</h4>
+                      <h4 class="descShort">English: B1 (Intermediate)</h4>
                     </div>
                   </div>
                 </div>
@@ -271,16 +354,92 @@
             <div class="dRow firstRow lastRow" style="height: auto;">
               <div
                       class="dCol secTitMarginBottom10 secAccIcoCircle colSpecialLineOn colSpecialBorderPrimoOn dateLinesDouble dateSeparatorDash dateStickSeparatorFrom colorTxtMediumBlack3 colorNameNavyBlue2 colorLastNameNavyBlue2 colorPositionNavyBlue2 colorImgBrdNavyBlue2 colorImgBgNavyBlue2 colorSecTitNavyBlue2 colorSecTitBgWhite3 colorSecTitBrdLightSilver3 colorSecLineLightSilver3 colorSecPointNavyBlue2 colorSecPointShadowNavyBlue1 colorEntTitMediumBlack3 colorEntSubMediumBlack3 colorEntBoldMediumBlack3 colorEntIcoWhite3 colorEntIcoBgNavyBlue3 colorIcoWhite3 colorIcoBgNavyBlue3 colorRatOnNavyBlue3 colorRatOffLightSilver3 colorRatAddNavyBlue3 colorBgWhite3 colorBgHfWhite3 colorDateMediumBlack3 colorDateBgNavyBlue2 firstCol"
-                      style="width: 75%; height: 1400px;">
+                      style="width: 75%; min-height: 1400px;">
 
                 <div class="section sectionType6 sectionExperience">
+                  <h3 class="title"><span class="ico"></span><span class="txt">Experience (continued)</span></h3>
                   <div class="entryContainer">
 
                     <div class="entry"
-                         data-date-from-year=""
-                         data-date-from-month=""
-                         data-date-to-year=""
-                         data-date-to-month=""
+                         data-date-from-year="2023"
+                         data-date-from-month="04"
+                         data-date-to-year="2024"
+                         data-date-to-month="08"
+                         style="min-height: 50px;">
+                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
+                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2023-04</span>
+                        <span class="dateSeparator"></span>
+                        <span class="dateTo">2024-08</span>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Software Engineer (Freelance / Contract)<br></h5>
+                        <h6 class="subtitle">Self-employed — Remote</h6>
+                        <div class="text desc">
+                          <ul>
+                            <li>Delivered backend features, REST integrations and bug fixes for several clients
+                              (PHP, Symfony).</li>
+                            <li>Modernized and maintained legacy PHP applications.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="entry"
+                         data-date-from-year="2022"
+                         data-date-from-month="04"
+                         data-date-to-year="2023"
+                         data-date-to-month="04"
+                         style="min-height: 50px;">
+                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
+                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2022-04</span>
+                        <span class="dateSeparator"></span>
+                        <span class="dateTo">2023-04</span>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Senior Software Engineer<br></h5>
+                        <h6 class="subtitle">Agile Fuel</h6>
+                        <div class="text desc">
+                          <ul>
+                            <li>Developed new features and business logic for a retail platform API
+                              (Symfony 5, PHP 8.2).</li>
+                            <li>Reduced response and page-load times through profiling and query optimization.</li>
+                            <li>Built frontend features for the retail platform (React, TypeScript) and its admin
+                              system (ExtJS).</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="entry"
+                         data-date-from-year="2019"
+                         data-date-from-month="04"
+                         data-date-to-year="2022"
+                         data-date-to-month="03"
+                         style="min-height: 50px;">
+                      <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
+                      <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2019-04</span>
+                        <span class="dateSeparator"></span>
+                        <span class="dateTo">2022-03</span>
+                      </div>
+                      <div class="content">
+                        <h5 class="title">Full-Stack Developer<br></h5>
+                        <h6 class="subtitle">Rational-Soft</h6>
+                        <div class="text desc">
+                          <ul>
+                            <li>Built a retail analytics platform from scratch (Symfony 5, DevExtreme / React
+                              components).</li>
+                            <li>Developed a lead-collection system aggregating leads from multiple external sources,
+                              covered with unit tests (Symfony 5).</li>
+                            <li>Maintained and optimized a trade-in portal for a car dealer network; implemented
+                              e-signature for document uploads (Symfony 3, jQuery, Twig).</li>
+                            <li>Contributed to 4–6 parallel projects (Symfony, Nest.js, React).</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="entry"
+                         data-date-from-year="2018"
+                         data-date-from-month="05"
+                         data-date-to-year="2018"
+                         data-date-to-month="12"
                          style="min-height: 50px;">
                       <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
                       <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2018-05</span>
@@ -291,19 +450,23 @@
                         <h5 class="title">Full-Stack Developer<br></h5>
                         <h6 class="subtitle">Fluvius</h6>
                         <div class="text desc">
-                          - Ads system to posting/accounting on facebook - (native PHP, jQuery, Angular 1.x)<br>
-                          Working on a legacy project that's needed a lot of optimization<br>
-                          - Promotional portal - (Symfony 4, jQuery, WebPack)<br>
-                          Working on a project from scratch. Designing and planning, working with requirements and
-                          developing frontend and backend<br>
-                          - CRM system for outsource company - (Symfony 3, jQuery)<br>
-                          Working on a CRM portal and be part of an international team. Rechanging design, working with
-                          external API
+                          <ul>
+                            <li>Optimized a legacy advertising and accounting system for Facebook posting
+                              (native PHP, jQuery, AngularJS).</li>
+                            <li>Built a promotional portal end to end — requirements, design, backend and frontend
+                              (Symfony 4, jQuery, Webpack).</li>
+                            <li>Reworked a CRM system for an outsourcing company as part of an international team;
+                              integrated external APIs (Symfony 3, jQuery).</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
-                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
-                         data-date-to-month="" style="min-height: 50px;">
+                    <div class="entry"
+                         data-date-from-year="2016"
+                         data-date-from-month="09"
+                         data-date-to-year="2018"
+                         data-date-to-month="05"
+                         style="min-height: 50px;">
                       <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
                       <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2016-09</span>
                         <span class="dateSeparator"></span>
@@ -313,29 +476,36 @@
                         <h5 class="title">PHP Developer<br></h5>
                         <h6 class="subtitle">PJSC "Ukrzaliznytsia", IT department<br></h6>
                         <div class="text desc">
-                          - Platform of free places in trains (PHP, JS)<br>
-                          Migrating codebase and database to new solution<br>
-                          - Internal reporting systems - creating and saving XML data from Oracle database<br>
-                          - Internal departments notes (Symfony 2, SonataAdmin) - notes about change in a work for
-                          view and search and admin's managing<br>
+                          <ul>
+                            <li>Migrated a train seat-availability platform to a new codebase and database (PHP, JS).</li>
+                            <li>Built internal reporting systems generating and storing XML data from an Oracle
+                              database.</li>
+                            <li>Developed an internal inter-department notes system with search and admin management
+                              (Symfony 2, SonataAdmin).</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
 
-                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
-                         data-date-to-month="" style="min-height: 50px;">
+                    <div class="entry"
+                         data-date-from-year="2009"
+                         data-date-from-month="10"
+                         data-date-to-year="2016"
+                         data-date-to-month="08"
+                         style="min-height: 50px;">
                       <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
                       <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2009-10</span>
                         <span class="dateSeparator"></span>
                         <span class="dateTo">2016-08</span>
                       </div>
                       <div class="content">
-                        <h5 class="title">Support specialist</h5>
+                        <h5 class="title">Support Specialist</h5>
                         <h6 class="subtitle">PJSC "Ukrzaliznytsia"</h6>
                         <div class="text desc">
-                          - Technical support of automated systems on railway. Used logging controls, xml reading,
-                          check and control information reports
-                          <br>
+                          <ul>
+                            <li>Provided technical support for automated railway systems: log analysis, XML data
+                              checks and monitoring of information reports.</li>
+                          </ul>
                         </div>
                       </div>
                     </div>
@@ -345,17 +515,16 @@
                 <div class="section sectionType5 sectionEducation">
                   <h3 class="title"><span class="ico"></span><span class="txt">Education</span></h3>
                   <div class="entryContainer">
-                    <div class="entry" data-date-from-year="" data-date-from-month="" data-date-to-year=""
-                         data-date-to-month="" style="min-height: 50px;">
+                    <div class="entry" data-date-from-year="2015" data-date-from-month="09" data-date-to-year="2016"
+                         data-date-to-month="10" style="min-height: 50px;">
                       <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
                       <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2015-09</span>
                         <span class="dateSeparator"></span>
                         <span class="dateTo">2016-10</span>
                       </div>
                       <div class="content">
-                        <h5 class="title"><p>Kharkiv National University of Radio Electronics</p>
-                          <p></p></h5>
-                        <div class="text desc"><p>Specialist of Software Engineering</p></div>
+                        <h5 class="title"><p>Kharkiv National University of Radio Electronics</p></h5>
+                        <div class="text desc"><p>Specialist, Software Engineering</p></div>
                       </div>
                       <div class="pointer" style="top: 1.1rem; left: -38px;"></div>
                       <div class="dates" style="margin-top: 2px;"><span class="dateFrom">2003-09</span>
@@ -363,9 +532,8 @@
                         <span class="dateTo">2008-05</span>
                       </div>
                       <div class="content">
-                        <h5 class="title"><p>Kharkiv State Academy of Railway Transport</p>
-                          <p></p></h5>
-                        <div class="text desc"><p>Master of Organization of transportations and management</p></div>
+                        <h5 class="title"><p>Kharkiv State Academy of Railway Transport</p></h5>
+                        <div class="text desc"><p>Master, Organization of Transportation and Management</p></div>
                       </div>
                     </div>
                   </div>
@@ -379,5 +547,6 @@
       </div>
     </div>
   </div>
+</div>
 </body>
 </html>
